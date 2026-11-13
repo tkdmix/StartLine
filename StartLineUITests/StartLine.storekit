@@ -1,0 +1,59 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "3E8ED484-646B-4D95-BB89-47BA2C34FB19",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "200",
+      "familyShareable" : false,
+      "internalID" : "C6B90940-C071-4B55-86C4-F166AC81F5EB",
+      "localizations" : [
+        {
+          "description" : "StartLineを応援するための任意の小さなチップです。機能は解放されません。",
+          "displayName" : "Small Coffee",
+          "locale" : "ja"
+        },
+        {
+          "description" : "An optional tip. It does not unlock app features.",
+          "displayName" : "Small Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "io.github.inadaman.StartLine.tip.smallCoffee",
+      "referenceName" : "Small Coffee",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "ja",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "JPN",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 5,
+    "minor" : 0
+  }
+}

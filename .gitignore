@@ -1,0 +1,11 @@
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+Config/Developer.xcconfig
+AGENTS.md
+CLAUDE.md
+.claude/
+.mcv-request.md
+ops/

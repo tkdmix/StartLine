@@ -1,0 +1,8 @@
+// Local signing settings. Copy this file to Config/Developer.xcconfig and
+// fill in your own Apple Developer Team ID. Config/Developer.xcconfig is
+// ignored by Git, so your Team ID stays on your machine.
+//
+// Without Config/Developer.xcconfig the project still builds for the
+// Simulator; signing for a device or for distribution needs a team.
+
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
