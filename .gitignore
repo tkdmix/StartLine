@@ -4,8 +4,8 @@ xcuserdata/
 DerivedData/
 build/
 Config/Developer.xcconfig
-AGENTS.md
-CLAUDE.md
+AGENTS.local.md
+CLAUDE.local.md
 .claude/
 .mcv-request.md
 ops/
