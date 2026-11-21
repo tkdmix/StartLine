@@ -221,6 +221,25 @@ final class StartLineUITests: XCTestCase {
         }
     }
 
+    func testSupportAndPrivacyLinksAcrossOrientations() {
+        launch()
+
+        app.buttons["About StartLine"].tap()
+
+        let supportLink = app.links["link.support"]
+        let privacyLink = app.links["link.privacy"]
+        for orientation in testedOrientations {
+            XCUIDevice.shared.orientation = orientation
+
+            for _ in 0..<4 where !privacyLink.isHittable {
+                app.swipeUp()
+            }
+
+            XCTAssertTrue(supportLink.isHittable)
+            XCTAssertTrue(privacyLink.isHittable)
+        }
+    }
+
     private func launchTipTest(result: String) {
         launch(
             additionalArguments: [

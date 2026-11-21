@@ -433,6 +433,8 @@ private struct AppInfoView: View {
 
                 TipJarSection(store: tipJarStore)
 
+                AppLinksSection()
+
                 Spacer(minLength: 0)
             }
             .padding(.horizontal, 28)
@@ -521,6 +523,37 @@ private struct TipJarSection: View {
                 .accessibilityIdentifier("tip.retry")
             }
         }
+    }
+}
+
+private struct AppLinksSection: View {
+    private let supportURL = URL(string: "https://tkdmix.com/apps/startline/support/")!
+    private let privacyURL = URL(string: "https://tkdmix.com/apps/startline/support/#privacy")!
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Help & Privacy")
+                .font(.headline)
+
+            link("Support", destination: supportURL, identifier: "link.support")
+            link("Privacy Policy", destination: privacyURL, identifier: "link.privacy")
+        }
+        .accessibilityElement(children: .contain)
+    }
+
+    private func link(_ title: String, destination: URL, identifier: String) -> some View {
+        Link(destination: destination) {
+            HStack(spacing: 6) {
+                Text(title)
+                Image(systemName: "arrow.up.right")
+                    .font(.footnote.weight(.semibold))
+                    .accessibilityHidden(true)
+            }
+            .font(.subheadline)
+            .frame(minHeight: 44)
+            .contentShape(Rectangle())
+        }
+        .accessibilityIdentifier(identifier)
     }
 }
 

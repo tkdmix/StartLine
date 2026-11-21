@@ -458,3 +458,12 @@ AutomationビルドとReleaseビルドは厳密には異なるバイナリーで
 - 外部依存を追加しない
 - Scheduledの既存動作を不用意に変更しない
 - 変更は小さくレビュー可能な単位に保つ
+
+## 16. サポートとプライバシーポリシーへのリンク
+
+Version 2.3では、情報シートのチップジャーの下に、サポートページとプライバシーポリシーへのリンクを置く（App Store Reviewガイドライン5.1.1）。
+
+- 見出しは `Help & Privacy`、リンクは `Support` と `Privacy Policy` とする
+- 行き先は `https://tkdmix.com/apps/startline/support/` と、同じページの `#privacy` とする
+- リンクはSafariなどの既定のブラウザで開き、アプリ内ブラウザを置かない
+- タイマー画面にはリンクを置かない
